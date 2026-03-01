@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    int arr[50];             // Declare array
+    int n, i;
+    int max, min, secondLargest;
+
+    // Step 1: Read number of elements
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    // Step 2: Read array elements
+    printf("Enter array elements:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    // Step 3: Initialize max, min and second largest
+    max = arr[0];
+    min = arr[0];
+    secondLargest = -1;   // Assume array has positive values
+
+    // Step 4: Traverse the array
+    for (i = 1; i < n; i++) {
+        // Check for maximum and second largest
+        if (arr[i] > max) {
+            secondLargest = max;
+            max = arr[i];
+        }
+        // Check for minimum
+        else if (arr[i] < min) {
+            min = arr[i];
+        }
+        // Check for second largest
+        else if (arr[i] < max && arr[i] > secondLargest) {
+            secondLargest = arr[i];
+        }
+    }
+    // Step 5: Display results
+    printf("Maximum element = %d\n", max);
+    printf("Minimum element = %d\n", min);
+    printf("Second largest element = %d\n", secondLargest);
+
+    return 0;
+
+}
