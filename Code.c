@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main() {
+    int n;
+    // Read number of elements
+    printf("Enter number of elements in array: ");
+    scanf("%d", &n);
+    int arr[n];
+    //Input array elements
+    printf("Enter elements of array: ");
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    //  Display entered array
+    printf("\nEntered array is: ");
+    for(int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    int choice;
+    printf("\n\nEnter 1 for Reversing and 2 for Rotating: ");
+    scanf("%d", &choice);
+    switch(choice) {
+        //  Reverse Array
+        case 1:
+            printf("\nReversed array is: ");
+            for(int i = n - 1; i >= 0; i--) {
+                printf("%d ", arr[i]);
+            }
+            break;
+        //  Rotate Array (Left Rotation)
+        case 2:{
+            int k;
+            printf("\nEnter number of positions to rotate left:");
+            scanf("%d", &k);
+            // Handle large k
+            k = k % n;
+            printf("Rotated array is: ");
+            // Print from k to end
+            for(int i = k; i < n; i++) {
+                printf("%d ", arr[i]);
+            }
+            // Print from start to k-1
+            for(int i = 0; i < k; i++) {
+                printf("%d ", arr[i]);
+            }
+            break;
+        }
+        default:
+            printf("\nInvalid choice!");
+    }
+    return 0;
+}
