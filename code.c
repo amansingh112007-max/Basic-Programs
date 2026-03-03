@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main() {
+    int n;
+    // Read  elements
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    int arr[n];
+    // Input array elements
+    printf("Enter elements:\n");
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    // Create visited array and initialize to 0
+    int visited[n];
+    for(int i = 0; i < n; i++) {
+        visited[i] = 0;
+    }
+    printf("\nFrequency of elements:\n");
+    //  Find frequency
+    for(int i = 0; i < n; i++) {
+        // If already counted, skip
+        if(visited[i] == 1)
+            continue;
+        int count = 1;
+        // Comparing with remaining elements
+        for(int j = i + 1; j < n; j++) {
+            if(arr[i] == arr[j]) {
+                count++;
+                visited[j] = 1;   // Mark duplicate as visited
+            }
+        }
+        // Print frequency
+        printf("%d occurred %d times\n", arr[i], count);
+    }
+    return 0;
+}
