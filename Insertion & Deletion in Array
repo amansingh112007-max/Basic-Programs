@@ -2,16 +2,16 @@
 
 int main() {
 
-    int arr[50];          // Declare array with maximum size
+    int arr[50];          // Declaring array with maximum size
     int n, i;             // n = number of elements
     int choice;           // User choice for switch case
     int pos, element;     // Position and element
 
-    // Step 1: Read number of elements
+    // Step 1: Reading number of elements
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    // Step 2: Read array elements
+    // Step 2: Reading array elements
     printf("Enter array elements:\n");
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
@@ -66,5 +66,6 @@ int main() {
     }
     return 0;
 }
+
 
 
