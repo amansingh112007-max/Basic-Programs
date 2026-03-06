@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int arr[50];             // Declare array
+    int arr[50];             // Declaring array
     int n, i;
     int max, min, secondLargest;
 
-    // Step 1: Read number of elements
+    // Step 1: Reading number of elements
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    // Step 2: Read array elements
+    // Step 2: Reading array elements
     printf("Enter array elements:\n");
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
@@ -26,11 +26,11 @@ int main() {
             secondLargest = max;
             max = arr[i];
         }
-        // Check for minimum
+        // Checking for minimum
         else if (arr[i] < min) {
             min = arr[i];
         }
-        // Check for second largest
+        // Checking for second largest
         else if (arr[i] < max && arr[i] > secondLargest) {
             secondLargest = arr[i];
         }
@@ -43,5 +43,6 @@ int main() {
     return 0;
 
 }
+
 
 
