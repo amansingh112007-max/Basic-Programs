@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     int n;
-    // Read number of elements
+    // Reading number of elements
     printf("Enter number of elements in array: ");
     scanf("%d", &n);
     int arr[n];
@@ -10,7 +10,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    //  Display entered array
+    //  Displaying entered array
     printf("\nEntered array is: ");
     for(int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
@@ -49,4 +49,5 @@ int main() {
     }
     return 0;
 }
+
 
