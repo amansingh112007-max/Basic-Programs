@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     int n;
-    // Read  elements
+    // Reading  elements
     printf("Enter number of elements: ");
     scanf("%d", &n);
     int arr[n];
@@ -34,4 +34,5 @@ int main() {
     }
     return 0;
 }
+
 
