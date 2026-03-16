@@ -1,5 +1,5 @@
 #include <stdio.h>
-#inclute<stdlib.h>
+#include<stdlib.h>
 
 int main() {
     int arr[50];        // Declaring array
