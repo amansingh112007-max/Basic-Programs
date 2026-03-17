@@ -5,7 +5,7 @@ int main() {
     int n = 10;
     int a[10] = {2, -5, 9, -6, 2, -1, 5, -3, 7,0};
     
-    //  variables naming
+    // variables naming
     int max_val = a[0];
     int current_sum = a[0];
 
@@ -24,7 +24,7 @@ int main() {
             current_sum = current_sum + a[i];
         }
 
-        // Updating  maximum
+        // Updating  maximum value
         if (current_sum > max_val) {
             max_val = current_sum;
         }
