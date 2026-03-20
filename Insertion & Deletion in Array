@@ -18,8 +18,8 @@ int main() {
     }
 
     // Step 3: Displaying menu
-    printf("\n1. Insert an element");
-    printf("\n2. Delete an element");
+    printf("\n 1. Insert an element");
+    printf("\n 2. Delete an element");
     printf("\nEnter your choice: ");
     scanf("%d", &choice);
 
@@ -27,7 +27,7 @@ int main() {
     switch (choice) {
 
         case 1:
-            // INSERT OPERATION
+            // INSERT OPERATIONS
             printf("Enter element to insert: ");
             scanf("%d", &element);
 
