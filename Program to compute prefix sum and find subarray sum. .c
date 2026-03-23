@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     int n;
-    // Taking number of elements
+    // Taking number of elements from user
     printf("Enter number of elements: ");
     scanf("%d", &n);
     int arr[n];
