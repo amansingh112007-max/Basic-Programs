@@ -16,7 +16,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     // Step 3: Read the element to search
-    printf("Enter element to search: ");
+    printf("Enter the element to search: ");
     scanf("%d", &key);
 
     // Step 4: Perform Linear Search
