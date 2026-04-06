@@ -17,7 +17,7 @@ int main() {
     for(int i = 1; i < n; i++) {
         prefix[i] = prefix[i-1] + arr[i];
     }
-    // Step 4: Print prefix array
+    // Step 4: Printing prefix array
     printf("\nPrefix Sum Array:\n");
     for(int i = 0; i < n; i++) {
         printf("%d ", prefix[i]);
