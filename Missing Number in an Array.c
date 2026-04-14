@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int findMissingNumber(int arr[], int n) {
-    // n is the size of array + 1 (since one number is missing)
+    // n is the size of array + 1 as only 1 number is missing.
     // Expected sum of 1 to n+1
     int total = (n + 1) * (n + 2) / 2;
     
