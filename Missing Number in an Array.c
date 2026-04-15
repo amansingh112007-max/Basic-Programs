@@ -15,7 +15,7 @@ int findMissingNumber(int arr[], int n) {
 }
 
 int main() {
-    // Array with one missing number 
+    // Array with only one missing number 
     int arr[] = {1, 2, 3, 5, 6, 7, 8};
     int n = sizeof(arr) / sizeof(arr[0]);
     
