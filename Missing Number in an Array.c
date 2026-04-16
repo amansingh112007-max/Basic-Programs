@@ -3,7 +3,7 @@
 
 int findMissingNumber(int arr[], int n) {
     // n is the size of array and + 1 as only 1 number is missing.
-    // Expected sum of 1 to 
+    // Expected sum of 1 to n+1
     int total = (n + 1) * (n + 2) / 2;
     
     int actual_sum = 0;
