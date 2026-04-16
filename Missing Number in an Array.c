@@ -24,7 +24,7 @@ int main() {
         printf("%d ", arr[i]);
     }
     printf("\n");
-    // Printing the missing number.
+    // Printing the Missing number.
     int missing = findMissingNumber(arr, n);
     printf("Missing number: %d\n", missing);
     
