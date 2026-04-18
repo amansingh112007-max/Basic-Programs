@@ -9,7 +9,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    intprefix[n];
+    int prefix[n];
     // Creating the prefix sum array
     prefix[0] = arr[0];
     for(int i = 1; i < n; i++) {
