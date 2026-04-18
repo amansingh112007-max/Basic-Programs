@@ -29,7 +29,7 @@ int main() {
         }
     }
     // printing the result
-    printf("Maximum Subarray Sum = %d", maxSum);
+    printf("Maximum Subarray Sum = %", maxSum);
 
     return 0;
 }
