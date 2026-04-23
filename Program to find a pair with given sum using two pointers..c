@@ -17,7 +17,7 @@ int main() {
     }
     int currSum = 0;
     int maxSum = 0;
-    // Checking all the subarrays
+    // Checking all the subarrays.
     for(int L = 0; L < n; L++) {
         for(int R = L; R < n; R++) {
             if(L == 0)
