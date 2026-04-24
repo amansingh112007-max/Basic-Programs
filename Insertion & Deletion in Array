@@ -5,7 +5,7 @@ int main() {
     int arr[50];          // Declaring array with maximum size.
     int n, i;             // n = number of elements.
     int choice;           // User choice for switch case.
-    int pos, element;     // Position and element
+    int pos, element;     // Position and element.
 
     // Step 1: Reading number of elements
     printf("Enter number of elements: ");
