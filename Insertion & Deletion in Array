@@ -27,7 +27,7 @@ int main() {
     switch (choice) {
 
         case 1:
-            // INSERT OPERATIONS
+            // INSERT OPERATIONS.
             printf("Enter element to insert: ");
             scanf("%d", &element);
 
