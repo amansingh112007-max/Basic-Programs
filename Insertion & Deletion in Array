@@ -17,7 +17,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Step 3: Displaying menu
+    // Step 3: Displaying menu.
     printf("\n 1.TO Insert an element");
     printf("\n 2.TO Delete an element");
     printf("\nEnter your choice: ");
