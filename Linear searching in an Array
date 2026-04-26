@@ -19,7 +19,7 @@ int main() {
     printf("Enter the element to search: ");
     scanf("%d", &key);
 
-    // Step 4: Perform Linear Search
+    // Step 4: Perform Linear Search.
     for (i = 0; i < n; i++) {
         if (arr[i] == key) {
             printf("Element found at position %d\n", i + 1);
