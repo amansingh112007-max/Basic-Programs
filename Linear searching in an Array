@@ -6,7 +6,7 @@ int main() {
     int key;            // Element to be searched in Array.
     int found = 0;      // Flag variable. 
 
-    // Step 1: Read number of elements
+    // Step 1: Read number of elements.
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
