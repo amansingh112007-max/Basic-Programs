@@ -27,7 +27,7 @@ int main() {
             break;          // Stop searching
         }
     }
-    // Step 5: If element not found
+    // Step 5: If element not found.
     if (found == 0) {
         printf("Element not found in the array\n");
     }
