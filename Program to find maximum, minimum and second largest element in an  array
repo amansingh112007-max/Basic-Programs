@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int arr[50];             // Declaring an array
+    int arr[50];             // Declaring an array.
     int n, i;
     int max, min, secondLargest;
 
