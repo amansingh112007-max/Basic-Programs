@@ -24,7 +24,7 @@ int main() {
             current_sum = current_sum + a[i];
         }
 
-        // Updating  maximum value
+        // Updating  maximum value.
         if (current_sum > max_val) {
             max_val = current_sum;
         }
