@@ -30,7 +30,7 @@ int main() {
         }
     }
 
-    // Displaying Final  output 
+    // Displaying Final  output .
     printf("\nMaximum Subarray Sum  is: %d\n", max_val);
 
     return 0;
