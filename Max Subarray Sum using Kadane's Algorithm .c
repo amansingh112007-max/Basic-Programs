@@ -5,7 +5,7 @@ int main() {
     int n = 10;
     int a[10] = {2, -5, 9, -6, 2, -1, 5, -3, 7,0};
     
-    // Assigning  Variables
+    // Assigning  Variables.
     int max_val = a[0];
     int current_sum = a[0];
 
