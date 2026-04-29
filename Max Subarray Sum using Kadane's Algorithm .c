@@ -17,7 +17,7 @@ int main() {
 
     // Kadane's Algorithm loop.
     for(int i = 1; i < n; i++) {
-        // Checking if we should restart the sum or add to it
+        // Checking if we should restart the sum or add to it.
         if (a[i] > (current_sum + a[i])) {
             current_sum = a[i];
         } else {
