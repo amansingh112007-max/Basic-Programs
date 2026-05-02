@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int arr[50];        // Declaring array.
+    int arr[50];        // Declaring array
     int n, i;           // n = number of elements.
     int key;            // Element to be searched in Array.
     int found = 0;      // Flag variable. 
