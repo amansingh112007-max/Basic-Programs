@@ -22,7 +22,7 @@ int main() {
         if(visited[i] == 1)
             continue;
         int count = 1;
-        // Comparing with remaining elements
+        // Comparing with remaining elements.
         for(int j = i + 1; j < n; j++) {
             if(arr[i] == arr[j]) {
                 count++;
