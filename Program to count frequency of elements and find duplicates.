@@ -16,7 +16,7 @@ int main() {
         visited[i] = 0;
     }
     printf("\nFrequency of elements:\n");
-    //  Find frequency
+    //  Find frequency.
     for(int i = 0; i < n; i++) {
         // If already counted, skip
         if(visited[i] == 1)
