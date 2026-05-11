@@ -23,7 +23,7 @@ int main() {
         printf("%d ", prefix[i]);
     }
     int L, R;
-    // Input range
+    // Input range.
     printf("\n\nEnter starting index (L): ");
     scanf("%d", &L);
     printf("Enter ending index (R): ");
