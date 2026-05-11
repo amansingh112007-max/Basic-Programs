@@ -34,7 +34,7 @@ int main() {
         sum = prefix[R];
     else
         sum = prefix[R] - prefix[L-1];
-    // Displaying result
+    // Displaying result.
     printf("Sum of subarray from index %d to %d is: %d", L, R, sum);
     return 0;
 }
