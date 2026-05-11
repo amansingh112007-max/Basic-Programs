@@ -29,7 +29,7 @@ int main() {
     printf("Enter ending index (R): ");
     scanf("%d", &R);
     int sum;
-    // Calculate subarray sum
+    // Calculate subarray sum.
     if(L == 0)
         sum = prefix[R];
     else
