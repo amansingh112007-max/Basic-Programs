@@ -1,0 +1,83 @@
+#include <stdio.h>
+#define SIZE 5 
+
+int stack[SIZE];
+int top = -1; 
+// Function of adding elements in the stack
+void push(int x) { 
+    if(top == SIZE - 1) {
+        printf("Stack Overflow! Cannot push %d\n", x); 
+    } else {
+        top++;
+        stack[top] = x; 
+        printf("%d pushed into stack.\n", x);
+    }
+} 
+
+// Function for removing the top element
+void pop() { 
+    if(top == -1) {
+        printf("Stack Underflow! Nothing to pop.\n"); 
+    } else {
+        printf("Popped element: %d\n", stack[top]); 
+        top--;
+    }
+} 
+
+// Function for looking  the top element without removing it
+void peek() { 
+    if(top == -1) {
+        printf("Stack is empty.\n"); 
+    } else {
+        printf("Top element is: %d\n", stack[top]); 
+    }
+} 
+
+// Function to show all elements in the stack
+void display() {
+    if(top == -1) {
+        printf("Stack is empty.\n");
+    } else {
+        printf("Current Stack: ");
+        for(int i = top; i >= 0; i--) {
+            printf("%d ", stack[i]);
+        }
+        printf("\n");
+    }
+}
+
+int main() { 
+    int choice, value; 
+    
+    printf("--- Stack Operations (Array Implementation) ---\n");
+    
+    do { 
+        printf("\n1. Push\n2. Pop\n3. Peek\n4. Display\n5. Exit\n"); 
+        printf("Enter your choice: ");
+        scanf("%d", &choice); 
+        
+        switch(choice) { 
+            case 1: 
+                printf("Enter value to push: "); 
+                scanf("%d", &value); 
+                push(value); 
+                break; 
+            case 2: 
+                pop(); 
+                break; 
+            case 3: 
+                peek(); 
+                break; 
+            case 4:
+                display();
+                break;
+            case 5:
+                printf("Exiting program...\n");
+                break;
+            default:
+                printf("Invalid choice! Please try again.\n");
+        } 
+    } while(choice != 5); 
+    
+    return 0; 
+}
