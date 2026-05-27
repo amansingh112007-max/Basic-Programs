@@ -24,7 +24,7 @@ void pop() {
     }
 } 
 
-// Function for looking  the top element without removing it
+// Function for looking  the top element without removing it.
 void peek() { 
     if(top == -1) {
         printf("Stack is empty.\n"); 
