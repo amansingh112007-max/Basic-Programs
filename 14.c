@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+
+#define SIZE 50 
+
+char stack[SIZE]; 
+int top = -1; 
+
+//  Push function for characters
+void push(char c) { 
+    if (top < SIZE - 1) {
+        stack[++top] = c; 
+    } else {
+        printf("Stack Overflow\n");
+    }
+} 
+
+//  Pop function for returning the characters
+char pop() { 
+    if (top == -1) {
+        return '\0'; 
+    }
+    return stack[top--]; 
+} 
+
+int main() { 
+    char str[SIZE]; 
+    int i; 
+    int len;
+
+    printf("Enter a string: "); 
+    
+    scanf("%s", str); 
+    
+    len = strlen(str);
+
+    // Step 1: Pushing all characters of the string onto the stack
+    for(i = 0; i < len; i++) {
+        push(str[i]); 
+    }
+
+    // Step 2: Poping characters from stack and putting them back into the string
+   
+    for(i = 0; i < len; i++) {
+        str[i] = pop(); 
+    }
+
+    printf("Reversed string: %s\n", str); 
+
+    return 0; 
+}
