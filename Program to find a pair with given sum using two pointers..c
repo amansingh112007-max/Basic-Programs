@@ -4,13 +4,13 @@ int main() {
     printf("Enter no of elements in array : ");
     scanf("%d", &n);
     int arr[n];
-    // Taking elements of an array.
+    // Taking elements of an array
     printf("Enter elements of array : ");
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
     int prefix[n];
-    // Creating the prefix sum array.
+    // Creating the prefix sum array
     prefix[0] = arr[0];
     for(int i = 1; i < n; i++) {
         prefix[i] = prefix[i-1] + arr[i];
