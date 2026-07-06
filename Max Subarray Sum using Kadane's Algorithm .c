@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Declaring Array size and elements
+    // Declaring Array size and elements.
     int n = 10;
     int a[10] = {2, -5, 9, -6, 2, -1, 5, -3, 7,0};
     
