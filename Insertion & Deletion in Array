@@ -7,7 +7,7 @@ int main() {
     int choice;           // User choice for switch case.
     int pos, element;     // Position and element.
 
-    // Step 1: Reading number of elements
+    // Step 1: Reading number of elements.
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
