@@ -12,7 +12,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Creating prefix sum array
+    // Creating prefix sum array.
     prefix[0] = arr[0];
     for(int i = 1; i < n; i++) {
         prefix[i] = prefix[i-1] + arr[i];
