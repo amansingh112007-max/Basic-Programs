@@ -19,7 +19,7 @@ int main() {
     min = arr[0];
     secondLargest = -1;   // Assume array has positive values
 
-    // Step 4: Traverse the array
+    // Step 4: Traverse the array.
     for (i = 1; i < n; i++) {
         // Check for maximum and second largest.
         if (arr[i] > max) {
