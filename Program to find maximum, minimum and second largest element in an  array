@@ -21,7 +21,7 @@ int main() {
 
     // Step 4: Traverse the array
     for (i = 1; i < n; i++) {
-        // Check for maximum and second largest
+        // Check for maximum and second largest.
         if (arr[i] > max) {
             secondLargest = max;
             max = arr[i];
