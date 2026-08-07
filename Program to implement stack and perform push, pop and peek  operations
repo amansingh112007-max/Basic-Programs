@@ -33,7 +33,7 @@ void peek() {
     }
 } 
 
-// Function to show all elements in the stack
+// Function to show all elements in the stack.
 void display() {
     if(top == -1) {
         printf("Stack is empty.\n");
