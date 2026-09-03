@@ -3,7 +3,7 @@
 
 int stack[SIZE];
 int top = -1; 
-// Function of adding elements in the stack
+// Function of adding elements in the stack.
 void push(int x) { 
     if(top == SIZE - 1) {
         printf("Stack Overflow! Cannot push %d\n", x); 
