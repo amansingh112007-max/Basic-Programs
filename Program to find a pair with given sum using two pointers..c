@@ -28,7 +28,7 @@ int main() {
                 maxSum = currSum;
         }
     }
-    // printing the result
+    // printing the result.
     printf("Maximum Subarray Sum = %d", maxSum);
 
     return 0;
