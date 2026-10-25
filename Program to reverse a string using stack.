@@ -6,7 +6,7 @@
 char stack[SIZE]; 
 int top = -1; 
 
-//  Push function for characters
+//  Push function for characters.
 void push(char c) { 
     if (top < SIZE - 1) {
         stack[++top] = c; 
